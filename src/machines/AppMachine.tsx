@@ -37,7 +37,10 @@ export const AppMachine = createMachine<Context, Transitions, States>(
         always: {
           actions: assign((context, event) => {
             console.log(context, event);
-            const cartMachine = spawn(createCartMachine("cart-machine"));
+            const cartMachine = spawn(
+              createCartMachine("cart-machine"),
+              "cart-machine"
+            );
             return {
               cartMachine,
             };

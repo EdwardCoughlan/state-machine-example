@@ -11,7 +11,7 @@ import "./App.css";
 // });
 
 function App() {
-  const [state, send, service] = useMachine(AppMachine);
+  const [state] = useMachine(AppMachine);
 
   return (
     <Router>
