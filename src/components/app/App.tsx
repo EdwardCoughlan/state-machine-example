@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AppMachine } from "../../machines/AppMachine";
 import Layout from "../layout/Layout";
-import { inspect } from "@xstate/inspect";
+// import { inspect } from "@xstate/inspect";
 import "./App.css";
 
 // inspect({
